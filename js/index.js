@@ -9,6 +9,8 @@ const car2 = document.querySelector('#car2 ');
 const car3 = document.querySelector('#car3 ');
 const opera = document.querySelector('#Opera ');
 const green = document.querySelector('#green');
+const bubble1 = document.querySelector('#bubble1');
+const bubble2 = document.querySelector('#bubble2');
 
 //picture click event and function #############################
 
@@ -81,4 +83,15 @@ function yeah() {
 
 green.addEventListener('click', () => {
   green.style.color = 'green';
+});
+
+//bubbling
+
+bubble1.addEventListener('click', e => {
+  bubble1.style.color = 'red';
+});
+
+bubble2.addEventListener('click', e => {
+  e.stopPropagation;
+  bubble2.style.color = 'green';
 });
