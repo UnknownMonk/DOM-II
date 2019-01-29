@@ -7,6 +7,9 @@ const right = document.querySelector('#right-click ');
 const car1 = document.querySelector('#car1 ');
 const car2 = document.querySelector('#car2 ');
 const car3 = document.querySelector('#car3 ');
+const opera = document.querySelector('#Opera ');
+const btn = document.querySelectorAll('.btn');
+console.log(btn);
 
 //picture click event and function #############################
 
@@ -68,3 +71,15 @@ function thirdCar() {
   car3.textContent = 'AND YOU GET A CAR';
   car3.style.fontSize = '40px';
 }
+
+opera.addEventListener('dragover', yeah);
+
+function yeah() {
+  opera.src = 'https://media.giphy.com/media/COYggJB0KnADm/giphy.gif';
+}
+
+btn.forEach(button =>
+  button.addEventListener('click', () => {
+    btn.style.color = 'green';
+  })
+);
