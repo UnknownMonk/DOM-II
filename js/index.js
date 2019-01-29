@@ -41,7 +41,7 @@ nav[3].addEventListener('click', e => {
   e.preventDefault();
 });
 //rick roll ####################
-rickRoll.addEventListener('mouseover', roll);
+rickRoll.addEventListener('dragenter', roll);
 
 function roll() {
   let audio2 = new Audio('audio/Never Gonna Give You Up Original.mp3');
