@@ -8,8 +8,8 @@ const car1 = document.querySelector('#car1 ');
 const car2 = document.querySelector('#car2 ');
 const car3 = document.querySelector('#car3 ');
 const opera = document.querySelector('#Opera ');
-const btn = document.querySelectorAll('.btn');
-console.log(btn);
+const green = document.querySelector('#green');
+console.log(green);
 
 //picture click event and function #############################
 
@@ -78,8 +78,6 @@ function yeah() {
   opera.src = 'https://media.giphy.com/media/COYggJB0KnADm/giphy.gif';
 }
 
-btn.forEach(button =>
-  button.addEventListener('click', () => {
-    btn.style.color = 'green';
-  })
-);
+green.addEventListener('click', () => {
+  green.style.color = 'green';
+});
