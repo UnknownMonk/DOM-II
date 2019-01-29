@@ -11,6 +11,17 @@ const opera = document.querySelector('#Opera ');
 const green = document.querySelector('#green');
 const bubble1 = document.querySelector('#bubble1');
 const bubble2 = document.querySelector('#bubble2');
+const goBuss = document.querySelector('.logo-heading');
+
+//green sock
+
+goBuss.addEventListener('click', bus);
+
+function bus() {
+  TweenMax.to('.funbuss', 10, { x: 2200 });
+  let audio3 = new Audio('audio/Coolio - Fantastic Voyage-65 (1).mp3');
+  audio3.play();
+}
 
 //picture click event and function #############################
 
