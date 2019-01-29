@@ -9,7 +9,6 @@ const car2 = document.querySelector('#car2 ');
 const car3 = document.querySelector('#car3 ');
 const opera = document.querySelector('#Opera ');
 const green = document.querySelector('#green');
-console.log(green);
 
 //picture click event and function #############################
 
@@ -25,7 +24,9 @@ function horn() {
   let audio = new Audio('audio/dixie-horn_daniel-simion.mp3');
   audio.play();
 }
-
+nav[3].addEventListener('click', e => {
+  e.preventDefault();
+});
 //rick roll ####################
 rickRoll.addEventListener('mouseover', roll);
 
