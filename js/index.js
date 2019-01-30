@@ -8,9 +8,9 @@ const car1 = document.querySelector('#car1 ');
 const car2 = document.querySelector('#car2 ');
 const car3 = document.querySelector('#car3 ');
 const opera = document.querySelector('#Opera ');
-const green = document.querySelector('#green');
+// const green = document.querySelector('#green');
 const bubble1 = document.querySelector('#bubble1');
-const bubble2 = document.querySelector('#bubble2');
+const work = document.querySelector('#work');
 const goBuss = document.querySelector('.logo-heading');
 
 //green sock
@@ -68,21 +68,21 @@ function out() {
 car1.addEventListener('mousedown', car);
 
 function car() {
-  car1.textContent = 'YOU GET A CAR';
+  car1.textContent = 'YOU GET A STRUGGLE BUS';
   car1.style.fontSize = '40px';
 }
 
 car2.addEventListener('mouseleave', secondCar);
 
 function secondCar() {
-  car2.textContent = 'YOU GET A CAR';
+  car2.textContent = 'YOU GET A STRUGGLE BUS';
   car2.style.fontSize = '40px';
 }
 
 car3.addEventListener('dragend', thirdCar);
 
 function thirdCar() {
-  car3.textContent = 'AND YOU GET A CAR';
+  car3.textContent = 'AND YOU GET A STRUGGLE BUS';
   car3.style.fontSize = '40px';
 }
 
@@ -102,7 +102,7 @@ bubble1.addEventListener('click', e => {
   bubble1.style.color = 'red';
 });
 
-bubble2.addEventListener('click', e => {
+work.addEventListener('click', e => {
   e.stopPropagation;
-  bubble2.style.color = 'green';
+  work.style.color = 'green';
 });
